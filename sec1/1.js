@@ -4,3 +4,5 @@ function solution(a, b, c) {
   if (result > c) result = c;
   return result;
 }
+
+solution(1, 2, 3);

@@ -1,10 +1,10 @@
-function solution(a, b, c) {
-  //logic
-  let min = a;
-  if (min > b) min = b;
-  if (min > c) min = c;
-
-  return min;
+function solution(arr) {
+  let result = arr[0];
+  for (let i of arr) {
+    if (result > i) {
+      result = i;
+    }
+  }
+  return result;
 }
-
-console.log(solution(6, 5, 11));
+console.log(solution([4, 2, 5, 16, 17, 22, 45]));
