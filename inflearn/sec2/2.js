@@ -1,8 +1,6 @@
 function solution(num, arr) {
   let visibleStudent = [];
   visibleStudent.push(arr[0]);
-  // neo형 하위~~!!
-  // 댕댕형 하위~~!!
   for (let i = 1; i < num; i++) {
     let flag = true;
     for (let j = 0; j < i; j++) {
