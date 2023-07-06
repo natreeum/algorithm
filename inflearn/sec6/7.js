@@ -4,18 +4,12 @@ const log = console.log;
 
 function solution(e, p) {
   for (let i of p) {
-    let f = true;
-    const arr = e.split("");
+    const queue = e.split("");
     for (let j of i) {
-      if (arr.includes(j)) {
-        if (arr[0] !== j) {
-          f = false;
-          break;
-        } else arr.shift();
-      }
+      if (j === queue[0]) queue.shift();
     }
-    if (f) log("YES");
-    else log("NO");
+    if (queue.length !== 0) log("NO");
+    else log("YES");
   }
 }
 
