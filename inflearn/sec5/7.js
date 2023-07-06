@@ -1,3 +1,4 @@
+// hash map
 const time = console.time;
 const timeEnd = console.timeEnd;
 const log = console.log;
